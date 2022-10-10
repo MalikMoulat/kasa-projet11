@@ -1,0 +1,545 @@
+html, 
+body {
+    height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 40px auto 0 auto;
+  padding: 0 40px;
+  max-width: 1440px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+#root{
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.display-hidden{
+  display: none;
+}
+
+.display-block{
+  display: block;
+}
+
+/****************************
+          HEADER
+****************************/
+
+.header{
+  height: 68px;
+  margin: 0 0 63px 0;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.header-logo{
+  height: 68px;
+}
+
+.header nav a {
+  color: #FF6060;
+  margin-left: 57px;
+  text-decoration: none;
+}
+
+
+/****************************
+          CARD SECTION
+****************************/
+
+.card-section{
+  /*border: solid 1px red;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+  row-gap: 60px;
+  padding: 56px;
+  background: #F6F6F6;
+  border-radius: 25px;
+}
+
+.card{
+  width: 340px;
+  height: 340px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  
+}
+
+.card h2 {
+  position: absolute;
+  margin: 20px;
+  bottom: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/****************************
+        BANNER SECTION
+****************************/
+
+.banner {
+  height: 223px;
+  border-radius: 25px;
+  margin-bottom: 43px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.home-banner{
+  background: no-repeat center/cover url(../assets/banner/eric-muhr-P_XxsdVgtpQ-unsplash.jpg);
+}
+
+.about-banner{
+  background: no-repeat center/cover url(../assets/banner/gustavo-alves-YOXSC4zRcxw-unsplash1.png);
+}
+
+.banner h1 {
+  position: absolute;
+  color: white;
+  margin: 0;
+  font-size: 48px;
+}
+
+/****************************
+      DROPDOWN BUTTON
+****************************/
+
+.btn-dropdown{
+  margin: 0 auto 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 1023px;
+  font-size: 24px;
+  width: 100%;
+}
+
+.btn-dropdown-header:hover{
+  cursor: pointer;
+}
+
+.btn-dropdown-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF6060;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.btn-dropdown-content{
+  background-color: #F6F6F6;
+  padding: 26px 19px;
+  color: #FF6060;
+  font-weight: 400;
+}
+
+.btn-dropdown-content p{
+  margin: 0;
+}
+
+.chevron-up{
+  transform: rotate(180deg);
+}
+
+
+/****************************
+        FOOTER
+****************************/
+
+.footer{
+  background-color: #000000;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+.footer img {
+  width: 122px;
+  height: 39px;
+}
+
+.footer p {
+  color: white;
+}
+
+/****************************
+    Cardinformation page
+****************************/
+
+.info-section{
+  max-width: 1240px;
+  margin: auto;
+}
+
+/****** SLIDER *************/
+
+.slider{
+  max-width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.slider img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: static;
+}
+
+.slider-chevron{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  font-size: 80px;
+  align-items: center;
+  text-align: center;
+}
+
+.left-chevron, .right-chevron {
+  height: fit-content;
+  color: white;
+  margin: 23px;
+}
+
+.left-chevron:hover, .right-chevron:hover{
+  cursor: pointer;
+  transform: scale(1.3, 1.3);
+  transform-origin: center;
+}
+
+
+/***** NAME & HOST INFO ******/
+
+.post-infos{
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-header{
+  color: #FF6060ed;
+  margin: 30px 0 23px 0;
+}
+
+.info-name{
+  margin: 0 0 20px 0;
+}
+
+.info-name h1{
+  margin: 0;
+  font-size: 32px;
+}
+
+.info-name p{
+  margin: 0;
+  font-size: 26px;
+}
+
+.info-host{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 20px 0;
+}
+
+.host-name{
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+}
+
+.host-first-last-name{
+  margin-top: 10px;
+}
+
+.host-first-last-name p{
+  margin: 0;
+  font-size: 18px;
+  color: #FF6060;
+}
+
+.info-host img{
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 0 0 10px;
+}
+
+/***** TAGS & RATING *******/
+
+
+.tags-rating{
+  justify-content: space-between;
+  margin: 30px 0 23px 0;
+}
+
+.tags-rating li {
+  list-style: none;
+}
+
+.tags{
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.tags p {
+  margin: 5px 10px 5px 0;
+  min-width: 115px;
+  background-color: #FF6060;
+  height: 25px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px 1px;
+}
+
+.rating ul {
+  display: flex;
+  color: #FF6060;
+}
+
+.fa-star{
+  font-size: 30px;
+}
+
+
+/****** decription-equipment ****/
+
+.decription-equipment{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 76px;
+}
+
+
+
+/****************************
+        404 PAGE
+****************************/
+
+.error-page{
+  color: #FF6060;
+  text-align: center;
+}
+
+.error-title{
+  font-size: 288px;
+  margin: 0;
+}
+
+.error-message{
+  font-size: 36px;
+  margin: 0 0 163px 0;
+}
+
+.error-home-link{
+  font-size: 18px;
+  color: #FF6060;
+  
+}
+
+
+
+
+
+@media (max-width: 1340px) {
+  .card-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .card{
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body{
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .header{
+   margin: 0 20px 20px 20px;
+  }
+
+  .header img {
+    width: 145px;
+    height: 47px;
+  }
+
+  .header nav a{
+    font-size: 12px;
+    margin-left: 10px;
+
+  }
+
+  .banner{
+    height: 111px;
+    margin: 0 20px 20px 20px;
+  }
+
+  .about-banner{
+    height: 223px;
+  }
+
+  .banner h1{
+    font-size: 24px;
+    text-align: left;
+    margin: 18px;
+    line-height: 24px;
+  }
+
+  .card-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-color: #FFFFFF;
+    margin: 0 20px 0 20px;
+  }
+
+  .card{
+    width: auto;
+    height: 255px;
+  }
+
+  .slider{
+    height: 255px;
+    margin: 0 20px 0 20px;
+  }
+
+  .fa-chevron-right, .fa-chevron-left{
+    font-size: 20px;
+  }
+
+  .decription-equipment{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+  }
+
+  .post-infos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .info-header{
+    margin: 0;
+  }
+
+  .info-name h1 {
+    font-size: 18px;
+  }
+  .info-name p {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+  }
+
+  .tags-rating{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 0 0 0;
+    height: 33px;
+  }
+
+  .rating ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .tags p {
+    font-size: 10px;
+    min-width: 84px;
+    height: 18px;
+  }
+
+  .fa-star{
+    font-size: 18px;
+  }
+
+  .info-host img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .host-first-last-name{
+    margin: 0;
+  }
+
+  .host-first-last-name p {
+    font-size: 12px;
+  }
+
+  .btn-dropdown{
+    font-size: 14px;
+    margin: 0 auto 20px;
+  }
+
+  .about-section{
+    margin: 0 20px;
+  }
+
+  .error-title{
+    margin-top: 200px;
+    font-size: 86px;
+  }
+
+  .error-message{
+    font-size: 18px;
+  }
+
+  .error-home-link{
+    font-size: 14px;
+  }
+}
