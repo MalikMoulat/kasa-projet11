@@ -8,9 +8,6 @@ import Rating from '../components/Rating';
 import Slider from '../components/Slider';
 import DropdownBtn from '../components/DropdownButton';
 
-
-
-
 function Article({dataFetch}){
 
   const {articleId} = useParams()
@@ -77,7 +74,7 @@ function Article({dataFetch}){
 }
 
 Article.propTypes = {
-  dataFetch: PropTypes.array.isRequired
+  dataFetch: PropTypes.array
 
 }
 
