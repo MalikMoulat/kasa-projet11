@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
@@ -14,7 +14,7 @@ import dataJson from '../Data/data.json'
 import '../styles/index.css'
 
 function App() {
-  /*
+/*  
   const [data, setData] = useState()
   useEffect(() => {
     const fetchData = async () => {
@@ -26,7 +26,7 @@ function App() {
     };
     fetchData();
   }, [])
-  */
+*/  
   return (
     <React.StrictMode>
       <Router>
