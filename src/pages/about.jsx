@@ -1,12 +1,17 @@
+import React from 'react'
+
 import DropdownBtn from "../components/DropdownButton"
 
 
 function About() {
     return (
-        <div>
+        <React.StrictMode>
             <section className='banner about-banner'>
+                <h1 className='display-hidden'>Banner</h1>
             </section>
             <section className="about-section">
+                <h1 className='display-hidden'>À propos</h1>
+
                 <DropdownBtn
                 defaultClose={true}
                 header={'Fiabilité'}
@@ -31,7 +36,7 @@ function About() {
                 content={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}
                 />
             </section>
-        </div>
+        </React.StrictMode>
     )
 }
 
