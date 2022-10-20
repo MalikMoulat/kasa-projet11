@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 
 import '../styles/index.css'
 
-import Rating from '../components/Rating';
-import Slider from '../components/Slider';
-import DropdownBtn from '../components/DropdownButton';
+import Rating from '../components/Rating/index';
+import Slider from '../components/Slider/index';
+import DropdownBtn from '../components/DropdownButton/index';
 
 function Article({dataFetch}){
 

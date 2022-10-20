@@ -1,6 +1,6 @@
 import React from 'react'
 
-import DropdownBtn from "../components/DropdownButton"
+import DropdownBtn from "../components/DropdownButton/index"
 
 
 function About() {

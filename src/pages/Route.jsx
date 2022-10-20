@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
-import About from './About'
-import Article from './CardInformation'
-import ErrorPage from './404';
-import Home from '../pages/Home'
+import About from './About.jsx'
+import Article from './CardInformation.jsx'
+import ErrorPage from './404.jsx';
+import Home from '../pages/Home.jsx'
 
 import dataJson from '../Data/data.json'
 
