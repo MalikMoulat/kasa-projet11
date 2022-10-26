@@ -1,4 +1,4 @@
-import {useParams} from 'react-router-dom'
+import {useParams, Navigate} from 'react-router-dom'
 import React from 'react';
 import PropTypes from 'prop-types'
 
@@ -7,10 +7,14 @@ import '../styles/index.css'
 import Rating from '../components/Rating/index';
 import Slider from '../components/Slider/index';
 import DropdownBtn from '../components/DropdownButton/index';
+import ErrorPage from './404';
 
 function Article({dataFetch}){
 
   const {articleId} = useParams()
+
+  // Vérifie si l'id existe dans le tableau dataFetch
+  const idExist = dataFetch.find(e => e.id === articleId)
 
   function splitHostName(data){
     const hostName = data.split(' ')
@@ -22,6 +26,12 @@ function Article({dataFetch}){
     )
   }
 
+  // Si l'id n'existe pas j'affiche la page error
+  if (!idExist) {
+    return (<Navigate to="/*"></Navigate>)
+  }
+
+  // Sinon je retourne l'article
   return dataFetch?.map((e, index) => 
         (e.id.includes(articleId)
         ? 

@@ -251,6 +251,15 @@ code {
   transform-origin: center;
 }
 
+.counter{
+  align-self: end;
+}
+
+.counter p{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 /***** NAME & HOST INFO ******/
 

@@ -14,6 +14,9 @@ function Slider({pictures}) {
                     <div className='left-chevron'>
                         <i className="fas fa-chevron-left" onClick={() => updateCounter(counter > 0 ? counter - 1 : counter = nbPicture - 1)}></i>
                     </div>
+                    <div className='counter'>
+                        <p>{counter}/{nbPicture - 1}</p>
+                    </div>
                     <div className='right-chevron'>
                         <i className="fas fa-chevron-right" onClick={() => updateCounter(counter < nbPicture - 1 ? counter + 1 : counter = 0)}></i>
                     </div>
